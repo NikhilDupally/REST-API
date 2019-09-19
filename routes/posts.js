@@ -7,9 +7,11 @@ const Post = require('../models/Post');
 
 // Get all posts
 router.get("/", async  (req,res) =>{
+    
     try {
         const posts = await Post.find();
         res.json(posts);
+       
 
     } catch (err){
         res.json({ message : err});
@@ -66,6 +68,8 @@ router.delete('/:postId' , async (req , res) => {
 });
 
 
+
+//update posts
 
 router.patch('/:postId' , async (req , res) => {
     try {
