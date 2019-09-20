@@ -7,9 +7,10 @@ const Post = require('../models/Post');
 
 // Get all posts
 router.get("/", async  (req,res) =>{
-    
+    console.log(req.body);
     try {
         const posts = await Post.find();
+        console.log('abcd')
         res.json(posts);
        
 

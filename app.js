@@ -19,7 +19,7 @@ app.use('/posts' , postsRoute);
 //connect db
 
 mongoose.connect(process.env.DB_CONNECT, 
-{ useNewUrlParser: true },
+{ useNewUrlParser: true, useUnifiedTopology: true },
 ()=> {
     console.log('connecting to db')
 });
