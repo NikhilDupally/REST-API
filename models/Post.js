@@ -1,5 +1,5 @@
 const mongoose  = require('mongoose');
-const otheruserschema = require('./otheruser');
+const otheruserschema = require('./Otheruser');
 const {commentsmodel ,CommentsSchema } = require('./Commments');
 const imageschema = require('./Image');
 

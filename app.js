@@ -13,8 +13,11 @@ app.use(bodyParser.json());
 //import routes
 
 const postsRoute = require('./routes/posts');
+const compRoute = require('./routes/competition')
 
 app.use('/posts' , postsRoute);
+app.use('/competition' , compRoute);
+
 
 //connect db
 
@@ -41,4 +44,4 @@ app.get("/",(req,res) =>{
 
 //
 
-app.listen(3000);
+app.listen(5000);

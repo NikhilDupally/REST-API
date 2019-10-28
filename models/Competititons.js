@@ -1,5 +1,5 @@
 const mongoose  = require('mongoose');
-const otheruserschema = require('./otheruser');
+const otheruserschema = require('./Otheruser');
 const othercompetititonschema = require('./Othercompetitions');
 const commentsmodel = require('./Comments');
 
@@ -38,6 +38,14 @@ const CompetitionsSchema = mongoose.Schema({
         type : [otheruserschema],
     },
     
+    description:{
+        type = String,
+    },
+
+    problem_statement:{
+        type = String,
+    },
+
     starttime : {
         type :Date,
     },
